@@ -1,48 +1,49 @@
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 230 50% 15%;
-    --foreground: 230 20% 98%;
+    --background: 210 100% 8%;
+    --foreground: 210 20% 98%;
 
-    --card: 230 45% 11%;
-    --card-foreground: 230 20% 98%;
+    --card: 210 100% 5%;
+    --card-foreground: 210 20% 98%;
 
-    --popover: 230 45% 11%;
-    --popover-foreground: 230 20% 98%;
+    --popover: 210 100% 5%;
+    --popover-foreground: 210 20% 98%;
 
-    --primary: 250 100% 62%;
-    --primary-foreground: 230 20% 98%;
+    --primary: 220 100% 60%;
+    --primary-foreground: 210 20% 98%;
 
-    --secondary: 217 100% 70%;
-    --secondary-foreground: 230 47.4% 11.2%;
+    --secondary: 200 100% 70%;
+    --secondary-foreground: 210 47.4% 11.2%;
 
-    --accent: 190 100% 60%;
-    --accent-foreground: 230 47.4% 11.2%;
+    --accent: 160 100% 60%;
+    --accent-foreground: 210 47.4% 11.2%;
 
-    --muted: 230 16% 20%;
+    --muted: 210 16% 20%;
     --muted-foreground: 215 20.2% 65.1%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 230 20% 98%;
+    --destructive-foreground: 210 20% 98%;
 
-    --border: 230 16% 20%;
-    --input: 230 16% 20%;
-    --ring: 250 100% 62%;
+    --border: 210 16% 20%;
+    --input: 210 16% 20%;
+    --ring: 220 100% 60%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 230 50% 7%;
-    --sidebar-foreground: 230 20% 98%;
-    --sidebar-primary: 250 100% 62%;
+    --sidebar-background: 210 100% 3%;
+    --sidebar-foreground: 210 20% 98%;
+    --sidebar-primary: 220 100% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 230 16% 15%;
-    --sidebar-accent-foreground: 230 20% 98%;
-    --sidebar-border: 230 16% 15%;
-    --sidebar-ring: 217 100% 70%;
+    --sidebar-accent: 210 16% 15%;
+    --sidebar-accent-foreground: 210 20% 98%;
+    --sidebar-border: 210 16% 15%;
+    --sidebar-ring: 200 100% 70%;
   }
 }
 
@@ -52,10 +53,10 @@
   }
 
   body {
-    @apply bg-indigo-900 text-foreground;
+    @apply bg-blue-950 text-foreground;
     background-image: 
-      radial-gradient(circle at 10% 20%, rgba(79, 70, 229, 0.15) 0%, transparent 20%),
-      radial-gradient(circle at 90% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 20%);
+      radial-gradient(circle at 10% 20%, rgba(30, 64, 175, 0.15) 0%, transparent 20%),
+      radial-gradient(circle at 90% 80%, rgba(37, 99, 235, 0.1) 0%, transparent 20%);
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
@@ -66,11 +67,11 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-indigo-950;
+    @apply bg-blue-950;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-indigo-500 rounded-full;
+    @apply bg-blue-500 rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -80,30 +81,30 @@
 
 @layer components {
   .glowing-border {
-    @apply border border-indigo-500 relative;
+    @apply border border-blue-500 relative;
   }
 
   .glowing-border::after {
     content: '';
     @apply absolute inset-0 rounded-md;
-    box-shadow: 0 0 15px rgba(79, 70, 229, 0.5);
+    box-shadow: 0 0 15px rgba(30, 64, 175, 0.5);
     z-index: -1;
   }
 
   .neon-text {
-    text-shadow: 0 0 5px rgba(79, 70, 229, 0.7), 0 0 10px rgba(79, 70, 229, 0.5);
+    text-shadow: 0 0 5px rgba(30, 64, 175, 0.7), 0 0 10px rgba(30, 64, 175, 0.5);
   }
 
   .neon-text-blue {
-    text-shadow: 0 0 5px rgba(99, 102, 241, 0.7), 0 0 10px rgba(99, 102, 241, 0.5);
+    text-shadow: 0 0 5px rgba(37, 99, 235, 0.7), 0 0 10px rgba(37, 99, 235, 0.5);
   }
 
   .neon-text-green {
-    text-shadow: 0 0 5px rgba(16, 185, 129, 0.7), 0 0 10px rgba(16, 185, 129, 0.5);
+    text-shadow: 0 0 5px rgba(5, 150, 105, 0.7), 0 0 10px rgba(5, 150, 105, 0.5);
   }
 
   .glassmorphism {
-    @apply bg-indigo-950 bg-opacity-70 backdrop-blur-md border border-white/10 shadow-lg;
+    @apply bg-blue-950 bg-opacity-70 backdrop-blur-md border border-white/10 shadow-lg;
   }
 
   .pixel-corners {
@@ -116,6 +117,7 @@
   }
 
   .text-gradient-primary {
-    @apply bg-gradient-to-r from-indigo-300 to-indigo-100 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent;
   }
 }
+

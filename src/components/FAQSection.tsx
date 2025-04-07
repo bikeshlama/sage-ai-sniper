@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 const FAQSection = () => {
   return (
-    <div className="py-20 px-4 bg-gradient-to-b from-indigo-900 to-indigo-800">
+    <div className="py-20 px-4 bg-gradient-to-b from-blue-900 to-blue-800">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -18,7 +18,7 @@ const FAQSection = () => {
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="glassmorphism rounded-lg">
-              <AccordionTrigger className="px-6 py-4 text-left font-medium text-indigo-100">
+              <AccordionTrigger className="px-6 py-4 text-left font-medium text-blue-100">
                 What is ChainSage AI?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-white/70">
@@ -27,7 +27,7 @@ const FAQSection = () => {
             </AccordionItem>
 
             <AccordionItem value="item-2" className="glassmorphism rounded-lg">
-              <AccordionTrigger className="px-6 py-4 text-left font-medium text-indigo-100">
+              <AccordionTrigger className="px-6 py-4 text-left font-medium text-blue-100">
                 How does the AI token scanner work?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-white/70">
@@ -36,7 +36,7 @@ const FAQSection = () => {
             </AccordionItem>
 
             <AccordionItem value="item-3" className="glassmorphism rounded-lg">
-              <AccordionTrigger className="px-6 py-4 text-left font-medium text-indigo-100">
+              <AccordionTrigger className="px-6 py-4 text-left font-medium text-blue-100">
                 Can I get alerts for new opportunities?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-white/70">
@@ -45,7 +45,7 @@ const FAQSection = () => {
             </AccordionItem>
 
             <AccordionItem value="item-4" className="glassmorphism rounded-lg">
-              <AccordionTrigger className="px-6 py-4 text-left font-medium text-indigo-100">
+              <AccordionTrigger className="px-6 py-4 text-left font-medium text-blue-100">
                 Do I need to connect my wallet?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-white/70">
@@ -54,7 +54,7 @@ const FAQSection = () => {
             </AccordionItem>
 
             <AccordionItem value="item-5" className="glassmorphism rounded-lg">
-              <AccordionTrigger className="px-6 py-4 text-left font-medium text-indigo-100">
+              <AccordionTrigger className="px-6 py-4 text-left font-medium text-blue-100">
                 Is there a mobile app available?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-white/70">

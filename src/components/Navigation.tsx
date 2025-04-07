@@ -12,44 +12,44 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-indigo-950 bg-opacity-80 backdrop-blur-md border-b border-indigo-500/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-blue-950 bg-opacity-80 backdrop-blur-md border-b border-blue-500/20">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 relative overflow-hidden rounded-full bg-gradient-to-br from-indigo-600 to-indigo-400 p-[2px] animate-pulse-glow">
-              <div className="w-full h-full rounded-full bg-indigo-950 flex items-center justify-center">
-                <Zap size={20} className="text-indigo-400" />
+            <div className="w-10 h-10 relative overflow-hidden rounded-full bg-gradient-to-br from-blue-600 to-blue-400 p-[2px] animate-pulse-glow">
+              <div className="w-full h-full rounded-full bg-blue-950 flex items-center justify-center">
+                <Zap size={20} className="text-blue-400" />
               </div>
             </div>
             <span className="text-xl font-bold tracking-tight neon-text">
-              Chain<span className="text-indigo-300 neon-text-blue">Sage</span> AI
+              Chain<span className="text-blue-300 neon-text-blue">Sage</span> AI
             </span>
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-white/80 hover:text-indigo-300 transition-colors duration-200">
+            <Link to="/" className="text-white/80 hover:text-blue-300 transition-colors duration-200">
               Home
             </Link>
-            <Link to="/dashboard" className="text-white/80 hover:text-indigo-300 transition-colors duration-200">
+            <Link to="/dashboard" className="text-white/80 hover:text-blue-300 transition-colors duration-200">
               Dashboard
             </Link>
-            <Link to="/pricing" className="text-white/80 hover:text-indigo-300 transition-colors duration-200">
+            <Link to="/pricing" className="text-white/80 hover:text-blue-300 transition-colors duration-200">
               Pricing
             </Link>
-            <Link to="/faq" className="text-white/80 hover:text-indigo-300 transition-colors duration-200">
+            <Link to="/faq" className="text-white/80 hover:text-blue-300 transition-colors duration-200">
               FAQ
             </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/login">
-              <Button variant="outline" className="border-indigo-400 text-indigo-200 hover:bg-indigo-700/20">
+              <Button variant="outline" className="border-blue-400 text-blue-200 hover:bg-blue-700/20">
                 Login
               </Button>
             </Link>
             <Link to="/register">
-              <Button className="bg-gradient-to-r from-indigo-600 to-indigo-400 text-white hover:opacity-90">
+              <Button className="bg-gradient-to-r from-blue-600 to-blue-400 text-white hover:opacity-90">
                 Get Started
               </Button>
             </Link>
@@ -61,7 +61,7 @@ const Navigation = () => {
             onClick={toggleMenu}
           >
             {isMenuOpen ? (
-              <X size={24} className="text-indigo-300" />
+              <X size={24} className="text-blue-300" />
             ) : (
               <Menu size={24} />
             )}
@@ -71,44 +71,44 @@ const Navigation = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-indigo-950 border-t border-indigo-500/20 py-4">
+        <div className="md:hidden bg-blue-950 border-t border-blue-500/20 py-4">
           <div className="container mx-auto px-4 flex flex-col space-y-6">
             <Link
               to="/"
-              className="text-white/80 hover:text-indigo-300 transition-colors duration-200 py-2"
+              className="text-white/80 hover:text-blue-300 transition-colors duration-200 py-2"
               onClick={toggleMenu}
             >
               Home
             </Link>
             <Link
               to="/dashboard"
-              className="text-white/80 hover:text-indigo-300 transition-colors duration-200 py-2"
+              className="text-white/80 hover:text-blue-300 transition-colors duration-200 py-2"
               onClick={toggleMenu}
             >
               Dashboard
             </Link>
             <Link
               to="/pricing"
-              className="text-white/80 hover:text-indigo-300 transition-colors duration-200 py-2"
+              className="text-white/80 hover:text-blue-300 transition-colors duration-200 py-2"
               onClick={toggleMenu}
             >
               Pricing
             </Link>
             <Link
               to="/faq"
-              className="text-white/80 hover:text-indigo-300 transition-colors duration-200 py-2"
+              className="text-white/80 hover:text-blue-300 transition-colors duration-200 py-2"
               onClick={toggleMenu}
             >
               FAQ
             </Link>
-            <div className="flex flex-col space-y-3 pt-4 border-t border-indigo-500/20">
+            <div className="flex flex-col space-y-3 pt-4 border-t border-blue-500/20">
               <Link to="/login" onClick={toggleMenu}>
-                <Button variant="outline" className="w-full border-indigo-400 text-indigo-200 hover:bg-indigo-700/20">
+                <Button variant="outline" className="w-full border-blue-400 text-blue-200 hover:bg-blue-700/20">
                   Login
                 </Button>
               </Link>
               <Link to="/register" onClick={toggleMenu}>
-                <Button className="w-full bg-gradient-to-r from-indigo-600 to-indigo-400 text-white hover:opacity-90">
+                <Button className="w-full bg-gradient-to-r from-blue-600 to-blue-400 text-white hover:opacity-90">
                   Get Started
                 </Button>
               </Link>
