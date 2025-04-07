@@ -1,20 +1,14 @@
 
 import React from 'react';
 import Navigation from '@/components/Navigation';
-import Hero from '@/components/Hero';
-import DemoSection from '@/components/DemoSection';
 import FAQSection from '@/components/FAQSection';
-import PricingSection from '@/components/PricingSection';
 import Footer from '@/components/Footer';
 
-const Landing = () => {
+const FAQPage = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
-      <main className="flex-grow">
-        <Hero />
-        <DemoSection />
-        <PricingSection />
+      <main className="flex-grow pt-20">
         <FAQSection />
       </main>
       <Footer />
@@ -22,4 +16,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default FAQPage;

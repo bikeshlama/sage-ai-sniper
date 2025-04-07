@@ -5,44 +5,44 @@
 
 @layer base {
   :root {
-    --background: 228 16% 12%;
-    --foreground: 210 40% 98%;
+    --background: 230 50% 15%;
+    --foreground: 230 20% 98%;
 
-    --card: 228 20% 9%;
-    --card-foreground: 210 40% 98%;
+    --card: 230 45% 11%;
+    --card-foreground: 230 20% 98%;
 
-    --popover: 228 20% 9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 230 45% 11%;
+    --popover-foreground: 230 20% 98%;
 
-    --primary: 265 100% 50%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 250 100% 62%;
+    --primary-foreground: 230 20% 98%;
 
-    --secondary: 187 100% 50%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217 100% 70%;
+    --secondary-foreground: 230 47.4% 11.2%;
 
-    --accent: 154 100% 50%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 190 100% 60%;
+    --accent-foreground: 230 47.4% 11.2%;
 
-    --muted: 228 16% 20%;
+    --muted: 230 16% 20%;
     --muted-foreground: 215 20.2% 65.1%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 230 20% 98%;
 
-    --border: 228 16% 20%;
-    --input: 228 16% 20%;
-    --ring: 265 100% 50%;
+    --border: 230 16% 20%;
+    --input: 230 16% 20%;
+    --ring: 250 100% 62%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 228 20% 7%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 265 100% 50%;
+    --sidebar-background: 230 50% 7%;
+    --sidebar-foreground: 230 20% 98%;
+    --sidebar-primary: 250 100% 62%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 228 16% 15%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 228 16% 15%;
-    --sidebar-ring: 187 100% 50%;
+    --sidebar-accent: 230 16% 15%;
+    --sidebar-accent-foreground: 230 20% 98%;
+    --sidebar-border: 230 16% 15%;
+    --sidebar-ring: 217 100% 70%;
   }
 }
 
@@ -52,10 +52,10 @@
   }
 
   body {
-    @apply bg-cs-dark text-foreground;
+    @apply bg-indigo-900 text-foreground;
     background-image: 
-      radial-gradient(circle at 10% 20%, rgba(110, 0, 255, 0.1) 0%, transparent 20%),
-      radial-gradient(circle at 90% 80%, rgba(0, 240, 255, 0.1) 0%, transparent 20%);
+      radial-gradient(circle at 10% 20%, rgba(79, 70, 229, 0.15) 0%, transparent 20%),
+      radial-gradient(circle at 90% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 20%);
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
@@ -66,11 +66,11 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-cs-darker;
+    @apply bg-indigo-950;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-cs-purple rounded-full;
+    @apply bg-indigo-500 rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -80,30 +80,30 @@
 
 @layer components {
   .glowing-border {
-    @apply border border-cs-purple relative;
+    @apply border border-indigo-500 relative;
   }
 
   .glowing-border::after {
     content: '';
     @apply absolute inset-0 rounded-md;
-    box-shadow: 0 0 15px rgba(110, 0, 255, 0.5);
+    box-shadow: 0 0 15px rgba(79, 70, 229, 0.5);
     z-index: -1;
   }
 
   .neon-text {
-    text-shadow: 0 0 5px rgba(110, 0, 255, 0.7), 0 0 10px rgba(110, 0, 255, 0.5);
+    text-shadow: 0 0 5px rgba(79, 70, 229, 0.7), 0 0 10px rgba(79, 70, 229, 0.5);
   }
 
   .neon-text-blue {
-    text-shadow: 0 0 5px rgba(0, 240, 255, 0.7), 0 0 10px rgba(0, 240, 255, 0.5);
+    text-shadow: 0 0 5px rgba(99, 102, 241, 0.7), 0 0 10px rgba(99, 102, 241, 0.5);
   }
 
   .neon-text-green {
-    text-shadow: 0 0 5px rgba(0, 255, 143, 0.7), 0 0 10px rgba(0, 255, 143, 0.5);
+    text-shadow: 0 0 5px rgba(16, 185, 129, 0.7), 0 0 10px rgba(16, 185, 129, 0.5);
   }
 
   .glassmorphism {
-    @apply bg-cs-darker bg-opacity-70 backdrop-blur-md border border-white/10 shadow-lg;
+    @apply bg-indigo-950 bg-opacity-70 backdrop-blur-md border border-white/10 shadow-lg;
   }
 
   .pixel-corners {
@@ -113,5 +113,9 @@
       100% calc(100% - 10px), calc(100% - 10px) 100%,
       10px 100%, 0 calc(100% - 10px)
     );
+  }
+
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-indigo-300 to-indigo-100 bg-clip-text text-transparent;
   }
 }
