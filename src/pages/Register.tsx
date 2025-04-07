@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -26,7 +25,6 @@ const Register = () => {
         variant: "destructive",
         title: "Terms & Conditions",
         description: "You must agree to the terms and conditions to proceed.",
-        icon: <AlertTriangle className="h-5 w-5" />,
       });
       return;
     }

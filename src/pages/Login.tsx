@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -35,7 +34,6 @@ const Login = () => {
           variant: "destructive",
           title: "Login failed",
           description: "Invalid email or password. Please try again.",
-          icon: <AlertTriangle className="h-5 w-5" />,
         });
       }
     }, 1500);
